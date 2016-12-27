@@ -1,0 +1,18 @@
+version: '2'
+services:
+  web:
+    restart: unless-stopped
+    build: .
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+    environment:
+      NODE_ENV: production
+    volumes:
+      - .:/home/app
+  mongo:
+    restart: unless-stopped
+    image: mongo
+    ports:
+      - 27017

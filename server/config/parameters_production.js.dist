@@ -1,0 +1,22 @@
+'use strict'
+
+module.exports = {
+    mongodb_host: 'mongo',
+    mongodb_name: 'bonbon',
+
+    path_protocol: 'http',
+    path_domain: 'mydomain.com',
+
+    smtp_port: 1025,
+
+    secret: 'secret',
+    port: 3000,
+
+    auth: {
+        google: {
+            clientID: GOOGLE_CLIENT_ID,
+            clientSecret: GOOGLE_CLIENT_SECRET,
+            callbackURL: 'http://mydomain.com/api/auth/google/callback',
+        },
+    },
+}

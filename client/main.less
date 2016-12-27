@@ -1,0 +1,84 @@
+@import "~react-nprogress/nprogress.css";
+
+body {
+  padding-top: 70px;
+}
+
+.table thead th {
+  border-top: none;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+.criterion-icon {
+  @size: 26px;
+  width: @size;
+  height: @size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  border-radius: 6px;
+  font-size: 14px;
+  padding-left: 1px;
+  color: #fff;
+}
+
+.pagination {
+  .page-item:not(.disabled) {
+    .page-link {
+      cursor: pointer;
+    }
+  }
+}
+
+// nprogress library
+#nprogress {
+  @nprogress-color: #0275d8;
+
+  .bar {
+    background: @nprogress-color;
+    height: 3px;
+  }
+
+  .peg {
+    box-shadow: 0 0 10px @nprogress-color, 0 0 5px @nprogress-color;
+  }
+}
+
+// datepicker library
+.react-datepicker__input-container {
+  display: block;
+}
+
+// slider library
+.slider {
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+
+  .handle > * {
+    font-size: 0.9em;
+    text-align: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    top: 1px;
+    width: 50px;
+    height: 48px;
+    line-height: 48px;
+
+    &.active {
+      background-color: grey;
+    }
+  }
+
+  .bar {
+    position: relative;
+    background: #ddd;
+    top: 20px;
+    height: 10px;
+  }
+}

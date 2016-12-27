@@ -1,0 +1,7 @@
+node_modules/
+client/dist/
+.idea
+.DS_Store
+
+/server/config/parameters_development.js
+/server/config/parameters_production.js
